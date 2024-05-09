@@ -1,0 +1,110 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cuenta">
+    <section class="prin">
+        <div class="prin2">
+            <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="" id="im">
+            <p id="p">Inicia sesión</p>
+            <form action="Ingresaracuenta">
+            <div class="usuario">
+                <label for="name">Nombre de usuario: </label>
+                <br>
+                <img src="https://i.pinimg.com/564x/49/fa/ac/49faac6f978028322c92f2a4ee014446.jpg" alt="" id="us">
+                <input type="text" id="nm" required placeholder="Ingresa tu usuario">
+            </div>
+            <div class="contraseña">
+                <label for="contraseña">Contraseña: </label>
+                <br>
+                <img src="https://i.pinimg.com/564x/e2/6a/22/e26a22ea749abca4f83074eebf919dea.jpg" alt="" id="us">
+                <input type="password" id="cts" required placeholder="Ingresa tu contraseña">
+            </div>
+
+            <input type="button"  value="Ingresar" id="en">
+            <a href="index.html"><input type="button"  value="Canelar" id="en"></a>
+
+            </form>
+            <p id="nc">¿Eres nuevo? Ingresa aquí para <a href="ncuenta.html">Crear cuenta</a> </p> 
+            
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .prin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.prin2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 5%;
+    padding: 5%;
+    background: linear-gradient(to bottom, #8276eca2, #3929c938); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+#p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+#im{
+    width: 100px;
+    border-radius: 10px;
+}
+
+#us{
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.usuario{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contraseña{
+    padding-top: 15px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nm, #cts{
+    padding: 2px 5px; 
+    font-size: 15px; 
+    text-align: center;
+}
+
+#en{
+    padding: 5px 10px; 
+    font-size: 15px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nc{
+    font-size: 12px;
+    padding: 12px;
+}
+
+a{
+    font-size: 12px;
+    color: white;
+}
+</style>

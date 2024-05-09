@@ -1,0 +1,324 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Banner from '../components/Banner.astro';
+import Chat from '../components/chat.astro';
+import Comentarios from '../components/comentarios.astro';
+---
+
+<Layout title="Astronomia.">
+	<main>
+            <Nav message='Cuestionario', message2='Indice'/>
+            <Banner message='ASTRONOMIA'/>
+
+		<!-- Seccion 1 -->
+		<section class="sec_1">
+			<div class="titulo_sec1">
+				<h2>BIENVENIDO</h2>
+			</div>
+
+			<div class="conenido_sec1" id="inicio">
+				<article class="caja_izqueirda_sec1">
+					<p class="parrafo_izquierda_sec1">Bienvenido a nuestra página de astronomía
+					Explora el fascinante mundo del cosmos y descubre las maravillas del universo. El universo, vasto y misterioso, es el hogar de innumerables maravillas celestiales que desafían nuestra comprensión y nos invitan a explorar lo desconocido. Desde la inmensidad de las galaxias hasta las delicadas nebulosas, cada rincón del cosmos alberga secretos que esperan ser revelados. <br> 
+						<br>Las galaxias, como vastas islas en el océano cósmico, contienen miles de millones de estrellas, planetas y otros objetos celestes. Desde las espirales majestuosas hasta las elípticas misteriosas, cada galaxia tiene su propia historia y belleza única.
+				        Las nebulosas, nubes de gas y polvo dispersas por todo el universo, son los viveros de nuevas estrellas y sistemas planetarios. Sus formas caprichosas y colores brillantes nos recuerdan la asombrosa diversidad y creatividad del cosmos.
+						<br><br>Y entre las estrellas que pueblan el firmamento, algunas brillan con una luz especial, como faros en la oscuridad infinita. Desde las ardientes gigantes rojas hasta las diminutas enanas blancas, cada estrella tiene su propia historia y destino en el vasto teatro del universo.
+				        En nuestra página de astronomía, te invitamos a sumergirte en este viaje de descubrimiento y asombro. Únete a nosotros mientras exploramos las maravillas del cosmos y ampliamos nuestros horizontes hacia los confines del espacio y el tiempo.</p>
+						
+					
+
+				</article>
+				<aside class="caja_derecha_sec1"> 
+					<div class="imagen_sec1">
+						<img src="https://www.ngenespanol.com/wp-content/uploads/2024/01/super-bowl-de-la-astronomia-la-gran-reunion-sobre-el-espacio-esta-aqui.jpg" alt="">
+					</div>
+				</aside>
+			</div>
+
+
+		</section>
+
+		<!-- Seccion 2 -->
+		<section class="sec_2" id="contenido">
+
+			<div class="titulo_sec1">
+				<h2>¿QUE TEMA TE GUSTARIA VER?</h2>
+			</div>
+
+            <div class="grid-container">
+                <div class="temas_sec2">
+
+					<div class="titulo_temas_sec2">
+						<h1>Estrellas</h1>
+					</div>
+
+					<div class="imagen_temas_sec2">
+						<img src="/imagenes/Estrellas.png">
+					</div>
+
+					<div class="boton_temas_sec2">
+						<a href="estrellas.html">IR</a>
+					</div>
+					
+				</div>
+
+
+				<div class="temas_sec2">
+					<div class="titulo_temas_sec2">
+						<h1>Creación</h1>
+					</div>
+
+					<div class="imagen_temas_sec2">
+						<img src="/imagenes/creacion.png" alt="">
+
+					</div>
+
+					<div class="boton_temas_sec2">
+						<a href="creacion.html">IR</a>
+					</div>
+				</div>
+
+
+				<div class="temas_sec2">
+					<div class="titulo_temas_sec2">
+						<h1>Nebulosas</h1>
+					</div>
+
+					<div class="imagen_temas_sec2">
+						<img src="/imagenes/Nebulosa.png" alt="">
+
+					</div>
+
+					<div class="boton_temas_sec2">
+						<a href="nebulosas.html">IR</a>
+					</div>
+				</div>
+
+
+				<div class="temas_sec2">
+					<div class="titulo_temas_sec2">
+						<h1>Galaxias</h1>
+					</div>
+
+					<div class="imagen_temas_sec2">
+						<img src="/imagenes/galaxia2.webp" alt="">
+
+					</div>
+
+					<div class="boton_temas_sec2">
+						<a href="galaxias.html">IR</a>
+					</div>
+				</div>
+
+
+				<div class="temas_sec2">
+					<div class="titulo_temas_sec2">
+						<h1>Eventos</h1>
+					</div>
+
+					<div class="imagen_temas_sec2">
+						<img src="/imagenes/espacio.webp" alt="">
+
+					</div>
+
+					<div class="boton_temas_sec2">
+						<a href="eventos.html">IR</a>
+					</div>
+				</div>
+              </div>
+			</div>
+		</section>
+        <Chat/>
+        <Comentarios/>
+		<Footer/>
+
+	</main>
+</Layout>
+
+<style>
+	*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* FUENTE */
+    font-family:"Poppins",sans-serif;
+}
+
+main{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec_1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.titulo_sec1{
+    text-align: center;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+
+.titulo_sec1 h2{
+    font-weight: 25px;
+}
+
+.conenido_sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja_izqueirda_sec1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.parrafo_izquierda_sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    margin: 4px 0;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.caja_derecha_sec1{
+    width: 50%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+    padding: 0 1%;
+}
+
+.imagen_sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_sec1 img{
+    object-fit: cover;
+    width: 100%;
+    margin: 10px 20px;
+    border-style: double;
+    
+}
+
+.sec_2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+    overflow:auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);; /* Define el ancho de cada columna */
+  grid-gap: 10px; /* Espacio entre elementos */
+  padding: 40px;
+  grid-gap: 30px; 
+}
+
+.temas_sec2 {
+  padding: 10px; /* Espacio interno */
+  text-align: center; /* Centrar contenido */
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); 
+  align-items: center;
+}
+
+
+.titulo_temas_sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen_temas_sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1%;
+
+}
+
+.boton_temas_sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#4b448d;
+    width: 100px;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 5%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.boton_temas_sec2 a{
+    text-decoration: none;
+    color:beige;
+    width: 100%;
+    height: 100%;
+}
+
+.boton_temas_sec2 a:hover {
+    color: rgb(250, 246, 246);
+    border-radius: 5%;
+    background-color: #233552;
+}
+
+.imagen_temas_sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_temas_sec2 img{
+    object-fit:fill;
+    width: 60%;
+    margin: 10px 20px;
+    
+}
+</style>

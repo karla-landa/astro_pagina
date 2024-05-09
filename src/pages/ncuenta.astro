@@ -1,0 +1,118 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Ncuenta">
+    <section class="prin">
+        <div class="prin2">
+            <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="" id="im">
+            <p id="p">Crea tu cuenta</p>
+            <form action="Crearcuenta">
+            <div class="usuario">
+                <label for="name">Nombre(s): </label>
+                <br>
+                <span class="material-symbols-outlined">person</span>
+                <input type="text" id="n" required placeholder="Nombre(s)">
+                <br>
+                <label for="lastn">Apellidos: </label>
+                <br>
+                <span class="material-symbols-outlined">person</span>
+                <input type="text" id="ln" required placeholder="Apellidos">
+                <br>
+                <label for="e">Edad: </label>
+                <br>
+                <span class="material-symbols-outlined">unfold_more</span>
+                <input type="number" id="ed" min="0" max="100" required placeholder="Edad">
+                <br>
+                <label for="c">Correo electronico: </label>
+                <br>
+                <span class="material-symbols-outlined">mail</span>
+                <input type="email" id="co" required placeholder="Correo electronico">
+                <br>
+                <label for="f">Fecha de nacimiento: </label>
+                <br>
+                <span class="material-symbols-outlined">calendar_month</span>
+                <input type="date" id="dt" required>
+                <br>
+            </div>
+            
+            <div class="contraseña">
+                <label for="contraseña">Contraseña: </label>
+                <br>
+                <span class="material-symbols-outlined">lock</span>
+                <input type="password" id="cts" required placeholder="Ingresa la contraseña">
+                <br>
+                <label for="contraseña">Confirmar contraseña: </label>
+                <br>
+                <span class="material-symbols-outlined">enhanced_encryption</span>
+                <input type="password" id="ct" required placeholder="Ingresa la contraseña">
+            </div>
+
+            <input type="button"  value="Crear Cuenta" id="cc">
+            <a href="index.html"><input type="button"  value="Cancelar" id="cc"></a>
+
+            </form>
+
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .prin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.prin2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 5%;
+    padding: 5%;
+    background: linear-gradient(to bottom, #8880d4a2, #3929c938); 
+    border-radius: 10px;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+#p{
+    font-size: 30px;
+}
+
+.usuario{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.contraseña{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#n, #ln, #ed, #co, #dt, #cts, #ct{
+    font-size: 15px; 
+    width: 250px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#cc{
+    width: 150px;
+    height: 30px;
+}
+</style>

@@ -1,0 +1,120 @@
+---
+
+---
+
+<!--comentarios-->
+<div id="recuadro" class="comentario">
+    <h1 class="Titulo">Comentarios</h1>
+    <input type="text" id="elemento" placeholder="Añadir comentario">
+    <button id="publicar">Comentar<span class="material-symbols-outlined">send</span></button>
+    <ul id="lista">
+        <li id="comentario-1">
+            <span class="material-symbols-outlined">person</span>
+            <p>
+                La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio. 
+                Prosperamos con las criticas negativas divertidas de escribir y de leer. Pero la triste verdad que debemos afrontar, es que en el gran orden de las cosas, 
+                cualquier basura tiene más significado que lo que deja ver nuestra critica.Pero en ocasiones el crítico si se arriesga cada vez que descubre y defiende algo 
+                nuevo. El mundo suele ser cruel con el nuevo talento. Las nuevas creaciones, lo nuevo, necesita amigos. Anoche, experimenté algo nuevo. Una extraordinaria 
+                cena de una fuente singular e inesperada. Decir solo que la comida y su creador han desafiado mis prejuicios sobre la buena cocina, subestimaría la realidad.
+                Me han tocado en lo más profundo.En el pasado, jamás oculté mi desdén por el famoso lema del Chef Gusteau: "Cualquiera puede cocinar". Pero al fin, me doy 
+                cuenta de lo que quizo decir en realidad: No cualquiera puede convertirse en un gran artista, pero un gran artista puede provenir de cualquier lado.Es difícil
+                imaginar un origen mas humilde, que el del genio
+                que ahora cocina en el Restaurante Gusteau y quien en opinión de este crítico, es nada menos, que el mejor Chef de Francia. Pronto volveré al Restaurante Gusteau, 
+                hambriento.
+            </p><br>    
+            <span class="material-symbols-outlined">person</span>
+            <p>HOlaa</p>
+        </li>
+        <!-- Guarda comentarioss -->
+    </ul>
+</div>
+
+<style>
+    #recuadro {
+    width: 80%;
+    border: 4px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #3929c967;
+}
+
+.comentario .Titulo {
+    text-align: center;
+    font-family:"Poppins",sans-serif;
+    color: #d6d6d6;
+}
+.comentario #publicar {
+    background-color: #483cbb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.comentario p{
+    color: #d6d6d6;
+    background: #5345da67;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comentario li{
+    
+    padding: 3px;
+    margin-top: 14px;
+    margin-bottom: 5px;
+}
+
+.comentario li span{
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    align-self: flex-end;
+    background: #483cbb;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+    padding: 3px;
+}
+
+#eliminar{
+    background-color: #c54933 ;
+}
+
+.comentario button span {
+    vertical-align: middle;
+    padding: 1px;
+}
+
+.comentario #elemento {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px solid #ccc;
+    margin-bottom: 10px;
+}
+#lista{
+    font-family:"Poppins",sans-serif;
+    word-wrap: break-word;
+}
+
+.eliminar{
+    background-color: #c54933;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.eliminar img {
+    vertical-align: middle;
+}
+
+#lista {
+    font-family:"Poppins",sans-serif;
+    word-wrap: break-word;
+    list-style-type: none; /* Quítale los puntos a la lista */
+}
+
+</style>
