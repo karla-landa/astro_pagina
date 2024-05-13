@@ -7,9 +7,17 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="Creación">
     <main>
-        <Nav message="Cuestionario" message2="Indice"/>
+        <Nav/>
         <Banner message='CREACIÓN'/>
-    <section>
+        <section id="indice">
+            <a href="#un">El Universo</a>
+            <a href="#eo">El Origen</a>
+            <a href="#ad">Antes y Después</a>
+            <a href="#ef">El Final</a>
+            <a href="#ot">Otras Teorías</a>
+        </section>
+
+        <section>
         <h2 id="un">El universo</h2>
         <h3>¿Qué es el universo?</h3>
         <div class="cont">
@@ -146,6 +154,21 @@ Por ejemplo, un cosmólogo del MIT llamado Max Tegmark afirmó en 2016 durante u
     align-items: center;
 }
 
+#indice{
+    border: 5px solid rgba(150, 165, 192, 0.795);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 82%;
+    text-align: center;
+}
+a{
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
 section{
     background-color: black;
     color: white;

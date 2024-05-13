@@ -9,6 +9,11 @@ import Banner from "../components/Banner.astro";
 
     <Nav/>
     <Banner message="Galaxias"/>
+    <section id="indice">
+        <a href="#que_son">¿Qué son las galaxias?</a>
+        <a href="#clasificacion">Clasificación</a>
+        <a href="#como_se_forman">¿Cómo se forman?</a>
+    </section>
       <!--SECCION 1 -->
       <section class="seccion_1" id="que_son">
         <div class="titulo_izquierdo_seccion1">
@@ -167,6 +172,21 @@ import Banner from "../components/Banner.astro";
 </Layout>
 
 <style>
+    #indice{
+    border: 5px solid rgba(150, 165, 192, 0.795);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 82%;
+    text-align: center;
+}
+a{
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
     .seccion_1{
     color: rgb(255, 255, 255);
     background-color: rgb(25, 25, 25);

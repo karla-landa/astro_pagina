@@ -3,108 +3,118 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Cuenta">
-    <section class="prin">
-        <div class="prin2">
-            <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="" id="im">
-            <p id="p">Inicia sesión</p>
-            <form action="Ingresaracuenta">
-            <div class="usuario">
-                <label for="name">Nombre de usuario: </label>
-                <br>
-                <img src="https://i.pinimg.com/564x/49/fa/ac/49faac6f978028322c92f2a4ee014446.jpg" alt="" id="us">
-                <input type="text" id="nm" required placeholder="Ingresa tu usuario">
-            </div>
-            <div class="contraseña">
-                <label for="contraseña">Contraseña: </label>
-                <br>
-                <img src="https://i.pinimg.com/564x/e2/6a/22/e26a22ea749abca4f83074eebf919dea.jpg" alt="" id="us">
-                <input type="password" id="cts" required placeholder="Ingresa tu contraseña">
-            </div>
-
-            <input type="button"  value="Ingresar" id="en">
-            <a href="index.html"><input type="button"  value="Canelar" id="en"></a>
-
-            </form>
-            <p id="nc">¿Eres nuevo? Ingresa aquí para <a href="ncuenta.html">Crear cuenta</a> </p> 
-            
+    <body>
+        
+    
+    <div class="container">
+        <div class="left-side">
+            <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="Astronaut">
+            <h1>BIENVENIDO</h1>
         </div>
-    </section>
+        <div class="right-side">
+            <form action="Ingresaracuenta">
+                <label for="name">Nombre de usuario:</label>
+                <input type="text" id="nm" required placeholder="Ingresa tu usuario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="cts" required placeholder="Ingresa tu contraseña">
+                <input type="submit" value="Ingresar">
+            </form>
+            <p>¿Eres nuevo? Ingresa aquí para <a href="ncuenta.html">Crear cuenta</a></p>
+        </div>
+    </div>
+</body>
 </Layout>
 
 <style>
-    .prin{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: white;
-}
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.prin2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    margin-top: 5%;
-    padding: 5%;
-    background: linear-gradient(to bottom, #8276eca2, #3929c938); 
-    border-radius: 10px;
-    text-align: center;
-}
+        .container {
+            display: flex;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
 
-#p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
+        .left-side {
+            flex: 1;
+            background-color: #4b448d;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-#im{
-    width: 100px;
-    border-radius: 10px;
-}
+        .right-side {
+            flex: 1;
+            padding: 40px;
+        }
 
-#us{
-    width: 30px;
-    vertical-align: middle;
-    border-radius: 10px;
-}
+        h1 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
 
-.usuario{
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.contraseña{
-    padding-top: 15px;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
 
-#nm, #cts{
-    padding: 2px 5px; 
-    font-size: 15px; 
-    text-align: center;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-#en{
-    padding: 5px 10px; 
-    font-size: 15px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
 
-#nc{
-    font-size: 12px;
-    padding: 12px;
-}
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-a{
-    font-size: 12px;
-    color: white;
-}
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4b448d;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        a {
+            color: #4b448d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
 </style>

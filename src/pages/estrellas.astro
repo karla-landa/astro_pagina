@@ -8,6 +8,13 @@ import Banner from "../components/Banner.astro";
 <Layout title="Estrellas">
     <Nav/>
     <Banner message="Estrellas"/>
+    <section id="indice">
+        <a href="#qse">¿Qué son las estrellas?</a>
+        <a href="#cf">¿Cómo se forman las estrellas?</a>
+        <a href="#c">Características</a>
+        <a href="#ej">Estrellas y Constelaciones</a>
+        <a href="#te">Tipos de estrellas</a>
+    </section>
     <section>
         <p id="qse">¿Qué son las estrellas?</p>
         <div class="cont">
@@ -198,6 +205,22 @@ import Banner from "../components/Banner.astro";
 </Layout>
 
 <style>
+
+#indice{
+    border: 5px solid rgba(150, 165, 192, 0.795);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 82%;
+    text-align: center;
+}
+a{
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
     #qse{
     border: 5px solid gold;
     padding: 10px;
@@ -227,11 +250,6 @@ import Banner from "../components/Banner.astro";
     text-align: center;
     font-size: 50px;
     color: white;
-}
-
-a{
-    color: white;
-    
 }
 
 #c{

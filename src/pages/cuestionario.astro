@@ -1,0 +1,430 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Banner from '../components/Banner.astro';
+---
+
+<Layout title='Cuestionario'>
+    
+    <Nav/>
+    <Banner message='CUESTIONARIO'/>
+
+  <!-- Seccion 1 -->
+  <section class="sec_1">
+
+    <section class="seccion_4" id="questionario">
+        <article class="caja_seccion_questionario">
+            
+            <div class="caja_preguntas">
+
+                
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>1.- ¿Qué son las galaxias y cómo se describen en términos de escala y complejidad?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P1" id="">
+                            <option value="1">Son agrupaciones de estrellas en el universo; son pequeñas y simples.</option>
+                            <option value="2">Son vastas ciudades cósmicas con una escala y complejidad titánicas.</option>
+                            <option value="3">Son formaciones de gas y polvo en el espacio exterior; son grandes pero no muy complejas.</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>2.- ¿Cuál es la composición de una galaxia y qué roles desempeñan las estrellas, el gas y polvo interestelar, y la materia oscura en su formación y evolución?</h3>
+                    </div>
+                    
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">Las galaxias están compuestas principalmente de estrellas; el gas y polvo interestelar y la materia oscura no tienen ningún papel en su formación. <br>
+                            <input type="radio" name="p2" class="radio">Las galaxias están compuestas de estrellas, gas y polvo interestelar, y materia oscura; cada uno desempeña un papel en su formación y evolución. <br>
+                            <input type="radio" name="p2" class="radio">Las galaxias están compuestas solo de gas y polvo interestelar; las estrellas y la materia oscura no están presentes en ellas.
+
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>3.- ¿Qué tipos principales de galaxias existen y cuáles son sus características distintivas?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P3" id="">
+                            <option value="1">Solo existen las galaxias espirales, que se caracterizan por sus brazos en espiral.</option>
+                            <option value="2">Existen galaxias espirales, elípticas e irregulares; cada una tiene una estructura y distribución de estrellas diferentes.</option>
+                            <option value="3">Las galaxias solo se dividen en dos tipos: espirales y elípticas.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>4.- Describe el proceso de formación de galaxias desde las "semillas cósmicas" hasta la fusión y colisión de estructuras más pequeñas.</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P4" id="">
+                            <option value="1">Las galaxias se forman por generación espontánea; no hay un proceso específico involucrado.</option>
+                            <option value="2">Las semillas cósmicas conducen a la formación de estructuras más grandes, que eventualmente se fusionan para formar galaxias.</option>
+                            <option value="3">Las galaxias se forman por la acumulación de estrellas individuales en el espacio.</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>5.- ¿Cuál es la influencia de la materia oscura en la formación y evolución de las galaxias, y cómo se detecta su presencia en el universo?</h3>
+                    </div>
+
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">La materia oscura no tiene influencia en la formación y evolución de las galaxias. <br>
+                            <input type="radio" name="p2" class="radio">La materia oscura afecta la distribución de la materia visible en las galaxias y se detecta a través de su efecto gravitacional en la luz. <br>
+                            <input type="radio" name="p2" class="radio">La materia oscura solo se encuentra en los bordes exteriores de las galaxias y no tiene influencia en su formación.
+                        </form>
+                    </div>                  
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>6.- ¿Qué papel desempeñan las estrellas en la composición de una galaxia y cómo contribuyen a su diversidad?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P6" id="">
+                            <option value="1">Las estrellas no tienen impacto en la composición de una galaxia.</option>
+                            <option value="2">Las estrellas contribuyen con su resplandor y energía, añadiendo diversidad en tamaño, brillo y edad a una galaxia.</option>
+                            <option value="3">Las estrellas son simplemente puntos de luz en el cielo y no afectan la diversidad de una galaxia.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>7.- ¿Cómo se diferencian las galaxias espirales de las elípticas en términos de forma y contenido estelar?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P7" id="">
+                            <option value="1">Las galaxias espirales tienen una forma más redondeada que las elípticas.</option>
+                            <option value="2">Las galaxias espirales tienen brazos en espiral y contienen estrellas más jóvenes, mientras que las elípticas tienen una forma más ovalada y contienen estrellas más antiguas.</option>
+                            <option value="3"> Las galaxias espirales y elípticas son idénticas en forma y contenido estelar.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>8.- ¿Qué fenómeno cósmico podría explicar la formación de galaxias irregulares y qué las hace únicas en comparación con otros tipos de galaxias?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P8" id="">
+                            <option value="1">Las galaxias irregulares son el resultado de un proceso desconocido y no se pueden explicar mediante teorías existentes.</option>
+                            <option value="2">Las galaxias irregulares son el resultado de interacciones gravitacionales tumultuosas con otras galaxias, lo que crea paisajes cósmicos caóticos y eclécticos.</option>
+                            <option value="3">Las galaxias irregulares no existen en el universo y son solo teorías sin fundamento.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>9.- ¿Cómo contribuye la fusión y colisión de galaxias más pequeñas a la formación de nuevas estrellas y sistemas planetarios dentro de una galaxia?</h3>
+                    </div>
+
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">La fusión y colisión de galaxias no tienen ningún impacto en la formación de estrellas y sistemas planetarios. <br>
+                            <input type="radio" name="p2" class="radio">Durante estas interacciones, la materia se comprime y se calienta, lo que conduce a la formación de estrellas y sistemas planetarios. <br>
+                            <input type="radio" name="p2" class="radio">Las estrellas y los sistemas planetarios se forman solo a partir de la acumulación de gas y polvo interestelar.
+                        </form>
+                    </div> 
+                    
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>10.- ¿Qué son las nebulosas y cuál es su composición principal?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P1" id="">
+                            <option value="1">Son estrellas en formación; su composición principal es hidrógeno y helio.</option>
+                            <option value="2">Son grandes nubes formadas principalmente de gas y polvo cósmico; su composición principal es hidrógeno y helio.</option>
+                            <option value="3">Son asteroides en el sistema solar; su composición principal es agua y minerales.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>11.- ¿Qué factores determinan la variedad de tamaños y formas de las nebulosas?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P2" id="">
+                            <option value="1">Su ubicación en el espacio; las nebulosas más alejadas son más grandes.</option>
+                            <option value="2">Su proximidad a estrellas; las nebulosas cerca de estrellas son más pequeñas y compactas.</option>
+                            <option value="3">Varios factores, incluyendo la actividad estelar cercana y los efectos de la radiación.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>12.- ¿Qué tipo de nebulosa se forma cuando el gas en una región del espacio se excita y emite luz visible?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P3" id="">
+                            <option value="1">Nebulosas oscuras.</option>
+                            <option value="2">Nebulosas de reflexión.</option>
+                            <option value="3">Nebulosas de emisión.</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>13.- ¿Qué causa la apariencia azulada de algunas nebulosas?</h3>
+                    </div>
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">Las galaxias se forman por generación espontánea; no hay un proceso específico involucrado. <br>
+                            <input type="radio" name="p2" class="radio">Las semillas cósmicas conducen a la formación de estructuras más grandes, que eventualmente se fusionan para formar galaxias. <br>
+                            <input type="radio" name="p2" class="radio">Las galaxias se forman por la acumulación de estrellas individuales en el espacio.
+                        </form>
+                    </div> 
+                    
+
+
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>14.- ¿Qué son las nebulosas planetarias y cómo se forman?</h3>
+                    </div>
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">Son nebulosas asociadas con la formación de planetas; se forman por la acumulación de polvo cósmico. <br>
+                            <input type="radio" name="p2" class="radio">Son nebulosas que rodean a los planetas en el sistema solar; se forman cuando un planeta se convierte en una estrella. <br>
+                            <input type="radio" name="p2" class="radio">Son nebulosas formadas por estrellas similares al Sol en el final de sus vidas; se forman cuando las estrellas pierden sus capas externas.
+                        </form>
+                    </div> 
+                    
+            
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>15.- ¿Dónde se encuentran las nebulosas en el universo?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P6" id="">
+                            <option value="1">LSolo se encuentran dentro de la Vía Láctea.</option>
+                            <option value="2">Se encuentran en diferentes regiones del espacio, incluyendo nuestra galaxia y otras galaxias fuera de la Vía Láctea.</option>
+                            <option value="3">Se encuentran exclusivamente en regiones cercanas a estrellas jóvenes.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>16.- ¿Cuál es la diferencia principal entre las nebulosas de emisión y las nebulosas de reflexión?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P7" id="">
+                            <option value="1">Las nebulosas de emisión son más brillantes que las de reflexión.</option>
+                            <option value="2">Las nebulosas de emisión emiten luz propia, mientras que las de reflexión reflejan la luz de estrellas cercanas.</option>
+                            <option value="3">Las nebulosas de emisión son más azuladas que las de reflexión.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>17.- ¿Qué caracteriza a las nebulosas oscuras?</h3>
+                    </div>
+
+                    <div class="opciones_mult">
+                        <form action="" class="formulario">
+                            <input type="radio" name="p2" class="radio">No están asociadas a ninguna estrella y no emiten luz visible. <br>
+                            <input type="radio" name="p2" class="radio">Son nebulosas extremadamente brillantes. <br>
+                            <input type="radio" name="p2" class="radio">Son nebulosas que rodean a estrellas jóvenes.
+                        </form>
+                    </div> 
+                    
+                </div>
+
+                <div class="pregunta">
+                    <div class="titulo_preugnta">
+                        <h3>18.- ¿Qué tipo de nebulosa combina regiones de emisión y de reflexión?</h3>
+                    </div>
+                    
+                    <div class="opciones">
+                        <select name="P9" id="">
+                            <option value="1">Nebulosas oscuras.</option>
+                            <option value="2">Nebulosas planetarias.</option>
+                            <option value="3">Nebulosas de emisión y reflexión.</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="boton_enviar">
+                    <button>ENVIAR</button>
+                </div>
+                
+
+            </div>
+
+        </article>
+    </section>
+
+    <Footer/>
+</Layout>
+
+<style>
+    .seccion_4{
+    color: rgb(255, 255, 255) ;
+    background-color:  rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.caja_seccion_questionario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .1%;
+    /*background-color: blue;*/
+    width: 100%;
+}
+
+
+.caja_preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 1% 1%;
+    /*background-color: green;*/
+    width: 98%;
+}
+
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 1% 1%;
+    /*background-color: yellow;*/
+    width: 98%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.304);
+}
+
+.titulo_preugnta{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 98%;
+    margin: 5px;
+    /*background-color: palevioletred;*/
+    
+}
+
+.titulo_preugnta h3{
+    font-size: 16px;
+    margin: 6px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 98%;
+    margin: 5px;
+    
+}
+
+.opciones select{
+    margin: 3px;
+    width: 60%;
+    background-color:rgb(237, 223, 207);
+    color: black;
+}
+
+.opciones_mult{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+
+}
+
+.formulario{
+    width: 98%;
+    padding: 4px;
+    margin-bottom: 13px;
+    line-height: 2;
+    background-color: rgba(0, 0, 0, 0.285);
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right:50px ;
+   
+
+}
+
+.formulario input{
+    margin: 5px;
+    border: 6px solid #c64040;
+}
+
+.boton_enviar{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    /*background-color: brown;*/
+    width: 400px;
+    margin: 10px;
+}
+
+.boton_enviar button{
+    width: 60%;
+    padding: 1%;
+    margin: 10px;
+    font-size: 19px;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+</style>

@@ -3,116 +3,131 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Ncuenta">
-    <section class="prin">
-        <div class="prin2">
-            <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="" id="im">
-            <p id="p">Crea tu cuenta</p>
-            <form action="Crearcuenta">
-            <div class="usuario">
-                <label for="name">Nombre(s): </label>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <img src="https://i.pinimg.com/564x/e9/b5/cd/e9b5cdc119c4a43407d7a739cd4b2ee9.jpg" alt="Astronaut">
                 <br>
-                <span class="material-symbols-outlined">person</span>
-                <input type="text" id="n" required placeholder="Nombre(s)">
-                <br>
-                <label for="lastn">Apellidos: </label>
-                <br>
-                <span class="material-symbols-outlined">person</span>
-                <input type="text" id="ln" required placeholder="Apellidos">
-                <br>
-                <label for="e">Edad: </label>
-                <br>
-                <span class="material-symbols-outlined">unfold_more</span>
-                <input type="number" id="ed" min="0" max="100" required placeholder="Edad">
-                <br>
-                <label for="c">Correo electronico: </label>
-                <br>
-                <span class="material-symbols-outlined">mail</span>
-                <input type="email" id="co" required placeholder="Correo electronico">
-                <br>
-                <label for="f">Fecha de nacimiento: </label>
-                <br>
-                <span class="material-symbols-outlined">calendar_month</span>
-                <input type="date" id="dt" required>
-                <br>
+                <h1>BIENVENIDO</h1>
+                <h1>Crea tu cuenta</h1>
             </div>
-            
-            <div class="contraseña">
-                <label for="contraseña">Contraseña: </label>
-                <br>
-                <span class="material-symbols-outlined">lock</span>
-                <input type="password" id="cts" required placeholder="Ingresa la contraseña">
-                <br>
-                <label for="contraseña">Confirmar contraseña: </label>
-                <br>
-                <span class="material-symbols-outlined">enhanced_encryption</span>
-                <input type="password" id="ct" required placeholder="Ingresa la contraseña">
+            <div class="right-side">
+                <form action="Crearcuenta">
+                    <label for="name">Nombre(s):</label>
+                    <input type="text" id="n" required placeholder="Nombre(s)">
+                    <label for="lastn">Apellidos:</label>
+                    <input type="text" id="ln" required placeholder="Apellidos">
+                    <label for="e">Edad:</label>
+                    <input type="number" id="ed" min="0" max="100" required placeholder="Edad">
+                    <label for="c">Correo electrónico:</label>
+                    <input type="email" id="co" required placeholder="Correo electrónico">
+                    <label for="f">Fecha de nacimiento:</label>
+                    <input type="date" id="dt" required>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="cts" required placeholder="Ingresa la contraseña">
+                    <label for="contraseña">Confirmar contraseña:</label>
+                    <input type="password" id="ct" required placeholder="Ingresa la contraseña">
+                    <input type="submit" value="Crear Cuenta">
+                </form>
+                <p>¿Ya tienes cuenta? <a href="cuenta.html">Inicia sesión aquí</a></p>
             </div>
-
-            <input type="button"  value="Crear Cuenta" id="cc">
-            <a href="index.html"><input type="button"  value="Cancelar" id="cc"></a>
-
-            </form>
-
         </div>
-    </section>
+    </body>
 </Layout>
 
-<style>
-    .prin{
+<style> 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    color: white;
+    height: 100vh;
 }
 
-.prin2{
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-side {
+            flex: 1;
+            background-color: #4b448d;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 40%;
-    margin-top: 5%;
-    padding: 5%;
-    background: linear-gradient(to bottom, #8880d4a2, #3929c938); 
-    border-radius: 10px;
-    text-align: center;
 }
 
-img{
-    width: 100px;
-    border-radius: 10px;
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-#p{
-    font-size: 30px;
+input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"] {
+            width: calc(100% - 22px); /* El 22px es el padding total (10px en cada lado) */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4b448d;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.usuario{
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    
-}
-.contraseña{
-    align-items: center;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
+p {
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-#n, #ln, #ed, #co, #dt, #cts, #ct{
-    font-size: 15px; 
-    width: 250px;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
+a {
+    color: #4b448d;
+    text-decoration: none;
 }
 
-#cc{
-    width: 150px;
-    height: 30px;
+a:hover {
+    text-decoration: underline;
 }
 </style>

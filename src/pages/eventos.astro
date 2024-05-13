@@ -8,6 +8,12 @@ import Banner from "../components/Banner.astro";
 <Layout title="Eventos">
     <Nav/>
     <Banner message="Eventos Astronomicos"/>
+    <section id="indice">
+        <a href="#cuasares">Cuásares</a>
+        <a href="#pilares_de _la_Creación">Pilares de la Creación</a>
+        <a href="#pulsares">Pulsares</a>
+        <a href="#agujeros_Negros">Agujeros Negros</a>
+    </section>
      <!--SECCION 1 -->
      <section class="seccion_1" id="cuasares">
         <article class="caja_derecha">
@@ -24,8 +30,7 @@ import Banner from "../components/Banner.astro";
                 Al momento de engullir, el agujero negro provoca grandes explosiones, dando lugar a esa 
                 luminosidad que los astrónomos han podido detectar. Así se forma un cuásar.</p>
             <div class="imagen_izquierda_seccion1">
-                <img src="cuasar.jpeg" alt="">
-                
+                <img src="/imagenes/cuasar.webp" alt="">
             </div>
             
         </article>
@@ -115,6 +120,21 @@ import Banner from "../components/Banner.astro";
 </Layout>
 
 <style>
+    #indice{
+    border: 5px solid rgba(150, 165, 192, 0.795);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 82%;
+    text-align: center;
+}
+a{
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
     .seccion_1{
     color: rgb(255, 255, 255);
     background-color: rgb(25, 25, 25);
@@ -163,7 +183,7 @@ import Banner from "../components/Banner.astro";
 
 .imagen_izquierda_seccion1 img{
     object-fit:fill;
-    width: 100%;
+    width: 50%;
     height: 200px;
     margin: 10px 20px;
     border-radius: 1%;
