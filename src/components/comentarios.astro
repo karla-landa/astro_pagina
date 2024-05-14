@@ -2,23 +2,26 @@
 
 ---
 
-<!--comentarios-->
+</head>
+<body>
 <div id="recuadro" class="comentario">
     <h1 class="Titulo">Comentarios</h1>
     <input type="text" id="elemento" placeholder="Añadir comentario">
-    <button id="publicar">Comentar<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" />
-        <path d="M6.5 12h14.5" />
-      </svg></button>
+    <button id="publicar">Comentar
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24V0H0z" fill="none"/>
+            <path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" />
+            <path d="M6.5 12h14.5" />
+        </svg>
+    </button>
     <ul id="lista">
         <li id="comentario-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path stroke="none" d="M0 0h24V0H0z" fill="none"/>
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                 <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                 <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-              </svg>
+            </svg>
             <p>
                 La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio. 
                 Prosperamos con las criticas negativas divertidas de escribir y de leer. Pero la triste verdad que debemos afrontar, es que en el gran orden de las cosas, 
@@ -32,127 +35,144 @@
                 hambriento.
             </p><br>    
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path stroke="none" d="M0 0h24V0H0z" fill="none"/>
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                 <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                 <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-              </svg>
+            </svg>
             <p>Se conoce como astronomía a la ciencia que se dedica al estudio de los cuerpos celestes que pueblan el cosmos: las estrellas, los planetas, los satélites, cometas, meteoritos, galaxias y toda la materia interestelar, así como sus interacciones y movimientos.</p>
         </li>
-        <!-- Guarda comentarioss -->
+        <!-- Guarda comentarios -->
     </ul>
 </div>
-
 <style>
     #recuadro {
-    width: 80%;
-    border: 4px solid #cfcfcf;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #3929c967;
-}
+        width: 80%;
+        border: 4px solid #cfcfcf;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #3929c967;
+    }
 
-.comentario .Titulo {
-    text-align: center;
-    font-family:"Poppins",sans-serif;
-    color: #d6d6d6;
-}
-.comentario #publicar {
-    background-color: #483cbb;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-.comentario p{
-    color: #d6d6d6;
-    background: #5345da67;
-    border-radius: 5px;
-    padding: 10px;
-}
-.comentario li{
-    
-    padding: 3px;
-    margin-top: 14px;
-    margin-bottom: 5px;
-}
+    .comentario .Titulo {
+        text-align: center;
+        font-family:"Poppins",sans-serif;
+        color: #d6d6d6;
+    }
 
-.comentario li span{
-    height: 32px;
-    width: 32px;
-    color: #fff;
-    align-self: flex-end;
-    background: #483cbb;
-    text-align: center;
-    line-height: 32px;
-    border-radius: 4px;
-    margin: 0 10px 7px 0;
-    padding: 3px;
-}
+    .comentario #publicar {
+        background-color: #483cbb;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+    }
 
-#eliminar{
-    background-color: #c54933 ;
-}
+    .comentario #publicar:hover {
+        background-color: #392f95;
+    }
 
-.comentario button span {
-    vertical-align: middle;
-    padding: 1px;
-}
+    .comentario #publicar svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
 
-.comentario #elemento {
-    width: 100%;
-    padding: 10px;
-    border-radius: 3px solid #ccc;
-    margin-bottom: 10px;
-}
-#lista{
-    font-family:"Poppins",sans-serif;
-    word-wrap: break-word;
-}
+    .comentario p {
+        color: #d6d6d6;
+        background: #5345da67;
+        border-radius: 5px;
+        padding: 10px;
+    }
 
-.eliminar{
-    background-color: #c54933;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
+    .comentario li {
+        padding: 3px;
+        margin-top: 14px;
+        margin-bottom: 5px;
+        list-style-type: none;
+    }
 
-.eliminar img {
-    vertical-align: middle;
-}
+    .comentario li span {
+        height: 32px;
+        width: 32px;
+        color: #fff;
+        align-self: flex-end;
+        background: #483cbb;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 4px;
+        margin: 0 10px 7px 0;
+        padding: 3px;
+    }
 
-#lista {
-    font-family:"Poppins",sans-serif;
-    word-wrap: break-word;
-    list-style-type: none;
-}
+    .eliminar {
+        background-color: #c54933;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
 
-#publicar {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    width: 150px; 
-    height: 40px; 
-    background-color: #483cbb; 
-    color: #ffffff; 
-    border: none;
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    .eliminar img {
+        vertical-align: middle;
+    }
 
-#publicar:hover {
-    background-color: #392f95; 
-}
+    .comentario #elemento {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px solid #ccc;
+        margin-bottom: 10px;
+    }
 
-#publicar svg {
-    width: 24px; 
-    height: 24px; 
-    margin-left: 10px;
-    margin-right: 5px; 
-}
-
+    #lista {
+        font-family: "Poppins", sans-serif;
+        word-wrap: break-word;
+    }
 </style>
+
+
+<script>
+    function publicarComentario() {
+        const comentarioInput = document.getElementById("elemento");
+        if (comentarioInput instanceof HTMLInputElement) {
+            const comentario = comentarioInput.value.trim();
+
+            if (comentario !== "") {
+                const lista = document.getElementById("lista");
+                const id = "comentario-" + Date.now(); // Generar un ID único para el comentario
+                const nuevoComentario = document.createElement("li");
+                nuevoComentario.id = id;
+                nuevoComentario.innerHTML = `
+                    <span class='material-symbols-outlined'>person</span>
+                    <p>${comentario}</p>
+                    <button class='eliminar' onclick='eliminarComentario("${id}")'>
+                        <span id='eliminar' class='material-symbols-outlined'>delete</span>
+                        Eliminar comentario
+                    </button>`;
+                lista.appendChild(nuevoComentario);
+                comentarioInput.value = ""; // Limpiar el campo de entrada
+            }
+        }
+    }
+
+    function eliminarComentario(id) {
+        const comentarioAEliminar = document.getElementById(id);
+        if (comentarioAEliminar) {
+            comentarioAEliminar.parentNode.removeChild(comentarioAEliminar);
+        }
+    }
+
+    document.getElementById("publicar").addEventListener("click", publicarComentario);
+</script>
+</body>

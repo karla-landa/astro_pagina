@@ -1,267 +1,252 @@
 ---
----
 
+---
 </head>
 <body>
 
-  <button class="chatA-boton">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24V0H0z" fill="none"/>
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-      <path d="M10 10l4 4m0 -4l-4 4" />
-    </svg>
-  </button>
+<button class="chatA-boton">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24V0H0z" fill="none"/>
+    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+    <path d="M10 10l4 4m0 -4l-4 4" />
+  </svg>
+</button>
 
-  <div class="chatA">
-    <header>
-      <h2>Chat de ayuda</h2>
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M8 9h8" />
-        <path d="M8 13h6" />
-        <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
-      </svg>
-    </header>
-    <ul class="chatM">
-      <li class="chat entrante">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-question" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
-            <path d="M19 22v.01" />
-            <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
-          </svg>
-        <p>Buen día ¿Cómo lo puedo ayudar hoy?</p>
-      </li>
-    </ul>
+<div class="chatA">
+  <header>
+    <h2>Chat de ayuda</h2>
+    <span class="material-symbols-outlined">close</span>
+  </header>
+  <ul class="chatM">
+    <li class="chat entrante">
+      <span class="material-symbols-outlined">manage_accounts</span>
+      <p>Buen día ¿Cómo lo puedo ayudar hoy?</p>
+    </li>
+  </ul>
 
-    <div class="chat-entrada">
-      <textarea placeholder="Escriba su mensaje..." required></textarea>
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M10 14l11 -11" />
-        <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
-      </svg>
-    </div>
+  <div class="chat-entrada">
+    <textarea placeholder="Escriba su mensaje..." required></textarea>
+    <span id="send-btn" class="material-symbols-outlined">send</span>
   </div>
+</div>
+
 <style>
-    /* Tus estilos CSS aquí */
-    .chatA-boton {
-      right: 40px;
-      bottom: 35px;
-      position: fixed;
-      height: 50px;
-      width: 50px;
-      color: #fff;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      outline: none;
-      cursor: pointer;
-      background: #483cbb;
-      border-radius: 50%;
-      transition: all 0.2s ease;
+  /* Tus estilos CSS aquí */
+  .chatA-boton {
+    right: 40px;
+    bottom: 35px;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    background: #483cbb;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .mostrar-chatA .chatA-boton {
+    transform: rotate(90deg);
+  }
+
+  .chatA-boton span {
+    position: absolute;
+  }
+
+  .mostrar-chatA .chatA-boton span:first-child,
+  .chatA-boton span:last-child {
+    opacity: 0;
+  }
+
+  .mostrar-chatA .chatA-boton span:last-child {
+    opacity: 1;
+  }
+
+  .chatA {
+    right: 40px;
+    bottom: 100px;
+    position: fixed;
+    width: 420px;
+    transform: scale(0.5);
+    opacity: 0;
+    pointer-events: none;
+    background: #fff;
+    transform-origin: bottom right;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.1s ease;
+  }
+
+  .mostrar-chatA .chatA {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .chatA header {
+    background: #483cbb;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .chatA header h2 {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  .chatA header span {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    transform: translateY(-50%);
+  }
+
+  .chatA .chatM {
+    height: 210px;
+    overflow-y: auto;
+    padding: 30px 20px 70px;
+  }
+
+  .chatM .chat {
+    display: flex;
+  }
+
+  .chatM .entrante span {
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    align-self: flex-end;
+    background: #483cbb;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+  }
+
+  .chatM .outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+  }
+
+  .chatM .chat p {
+    color: #fff;
+    max-width: 75%;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: #483cbb;
+  }
+
+  .chatM .entrante p {
+    color: #000;
+    background: #f2f2f2;
+    border-radius: 10px 10px 10px 0;
+  }
+
+  .chatA .chat-entrada {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background: #fff;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .chat-entrada textarea {
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+  }
+
+  .chat-entrada span {
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color: #483cbb;
+    font-size: 1.35rem;
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  .chat-entrada textarea:valid ~ span {
+    visibility: visible;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const chatEntrada = document.querySelector<HTMLTextAreaElement>(".chat-entrada textarea");
+    const BotonEnviar = document.querySelector<HTMLSpanElement>(".chat-entrada span");
+    const chatM = document.querySelector<HTMLUListElement>(".chatM");
+    const chatAEntrante = document.querySelector<HTMLButtonElement>(".chatA-boton");
+
+    if (!chatEntrada || !BotonEnviar || !chatM || !chatAEntrante) {
+      console.error("Uno o más elementos no se encontraron en el DOM.");
+      return;
     }
 
-    .mostrar-chatA .chatA-boton {
-      transform: rotate(90deg);
+    let userMessage: string;
+
+    const createChatLi = (message: string, className: string) => {
+      const chatLi = document.createElement("li");
+      chatLi.classList.add("chat", className);
+      let chatContent = className === "outgoing"
+        ? `<p>${message}</p>`
+        : `<span class="material-symbols-outlined">manage_accounts</span><p>${message}</p>`;
+      chatLi.innerHTML = chatContent;
+      return chatLi;
     }
 
-    .chatA-boton span {
-      position: absolute;
+    const handleChat = () => {
+      userMessage = chatEntrada.value.trim();
+      if (!userMessage) return;
+      chatEntrada.value = "";
+
+      chatM.appendChild(createChatLi(userMessage, "outgoing"));
+
+      setTimeout(() => {
+        chatM.appendChild(createChatLi("Escribiendo...", "entrante"));
+      }, 600);
     }
 
-    .mostrar-chatA .chatA-boton span:first-child,
-    .chatA-boton span:last-child {
-      opacity: 0;
-    }
-
-    .mostrar-chatA .chatA-boton span:last-child {
-      opacity: 1;
-    }
-
-    .chatA {
-      right: 40px;
-      bottom: 100px;
-      position: fixed;
-      width: 420px;
-      transform: scale(0.5);
-      opacity: 0;
-      pointer-events: none;
-      background: #fff;
-      transform-origin: bottom right;
-      box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-                  0 32px 64px -48px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      overflow: hidden;
-      transition: all 0.1s ease;
-    }
-
-    .mostrar-chatA .chatA {
-      transform: scale(1);
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .chatA header {
-      background: #483cbb;
-      padding: 16px 0;
-      text-align: center;
-      position: relative;
-    }
-
-    .chatA header h2 {
-      color: #fff;
-      font-size: 1.4rem;
-    }
-
-    .chatA header span {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      color: #fff;
-      cursor: pointer;
-      display: none;
-      transform: translateY(-50%);
-    }
-
-    .chatA .chatM {
-      height: 210px;
-      overflow-y: auto;
-      padding: 30px 20px 70px;
-    }
-
-    .chatM .chat {
-      display: flex;
-    }
-
-    .chatM .entrante span {
-      height: 32px;
-      width: 32px;
-      color: #fff;
-      align-self: flex-end;
-      background: #483cbb;
-      text-align: center;
-      line-height: 32px;
-      border-radius: 4px;
-      margin: 0 10px 7px 0;
-    }
-
-    .chatM .outgoing {
-      margin: 20px 0;
-      justify-content: flex-end;
-    }
-
-    .chatM .chat p {
-      color: #fff;
-      max-width: 75%;
-      font-size: 0.95rem;
-      padding: 12px 16px;
-      border-radius: 10px 10px 0 10px;
-      background: #483cbb;
-    }
-
-    .chatM .entrante p {
-      color: #000;
-      background: #f2f2f2;
-      border-radius: 10px 10px 10px 0;
-    }
-
-    .chatA .chat-entrada {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      gap: 5px;
-      background: #fff;
-      padding: 5px 20px;
-      border-top: 1px solid #ccc;
-    }
-
-    .chat-entrada textarea {
-      height: 55px;
-      width: 100%;
-      border: none;
-      outline: none;
-      font-size: 0.95rem;
-      resize: none;
-      padding: 16px 15px 16px 0;
-    }
-
-    .chat-entrada span {
-      align-self: flex-end;
-      height: 55px;
-      line-height: 55px;
-      color: #483cbb;
-      font-size: 1.35rem;
-      cursor: pointer;
-      visibility: hidden;
-    }
-
-    .chat-entrada textarea:valid ~ span {
-      visibility: visible;
-    }
-  </style>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const chatEntrada = document.querySelector<HTMLTextAreaElement>(".chat-entrada textarea");
-      const BotonEnviar = document.querySelector<HTMLSpanElement>(".chat-entrada span");
-      const chatM = document.querySelector<HTMLUListElement>(".chatM");
-      const chatAEntrante = document.querySelector<HTMLButtonElement>(".chatA-boton");
-
-      if (!chatEntrada || !BotonEnviar || !chatM || !chatAEntrante) {
-        console.error("Uno o más elementos no se encontraron en el DOM.");
-        return;
-      }
-
-      let userMessage: string;
-
-      const createChatLi = (message: string, className: string) => {
-        const chatLi = document.createElement("li");
-        chatLi.classList.add("chat", className);
-        let chatContent = className === "outgoing"
-          ? `<p>${message}</p>`
-          : `<span class="material-symbols-outlined">manage_accounts</span><p>${message}</p>`;
-        chatLi.innerHTML = chatContent;
-        return chatLi;
-      }
-
-      const handleChat = () => {
-        userMessage = chatEntrada.value.trim();
-        if (!userMessage) return;
-        chatEntrada.value = "";
-
-        chatM.appendChild(createChatLi(userMessage, "outgoing"));
-
-        setTimeout(() => {
-          chatM.appendChild(createChatLi("Escribiendo...", "entrante"));
-        }, 600);
-      }
-
-      chatAEntrante.addEventListener("click", () => {
-        document.body.classList.toggle("mostrar-chatA");
-        console.log("Botón de chat clicado, clase 'mostrar-chatA' toggled.");
-      });
-
-      BotonEnviar.addEventListener("click", () => {
-        console.log("Botón enviar clicado.");
-        handleChat();
-      });
-
-      // Depuración adicional
-      console.log("Elementos encontrados: ", {
-        chatEntrada,
-        BotonEnviar,
-        chatM,
-        chatAEntrante
-      });
+    chatAEntrante.addEventListener("click", () => {
+      document.body.classList.toggle("mostrar-chatA");
+      console.log("Botón de chat clicado, clase 'mostrar-chatA' toggled.");
     });
-  </script>
+
+    BotonEnviar.addEventListener("click", () => {
+      console.log("Botón enviar clicado.");
+      handleChat();
+    });
+
+    // Depuración adicional
+    console.log("Elementos encontrados: ", {
+      chatEntrada,
+      BotonEnviar,
+      chatM,
+      chatAEntrante
+    });
+  });
+</script>
 </body>
