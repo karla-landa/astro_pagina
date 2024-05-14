@@ -17,7 +17,7 @@ import Layout from "../layouts/Layout.astro";
                 <input type="text" id="nm" required placeholder="Ingresa tu usuario">
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" id="cts" required placeholder="Ingresa tu contraseña">
-                <input type="submit" value="Ingresar">
+                <input type="submit" id="en" value="Ingresar">
             </form>
             <p>¿Eres nuevo? Ingresa aquí para <a href="ncuenta.html">Crear cuenta</a></p>
         </div>
@@ -118,3 +118,31 @@ import Layout from "../layouts/Layout.astro";
             text-decoration: underline;
         }
 </style>
+
+<script>
+ const botonIngresar = document.getElementById("en");
+
+botonIngresar.addEventListener("click", function(event) {
+    event.preventDefault(); // Previene que el formulario se envíe automáticamente
+    const nombreUsuarioElement = document.getElementById("nm");
+    const contraseñaElement = document.getElementById("cts");
+
+    if (nombreUsuarioElement instanceof HTMLInputElement && contraseñaElement instanceof HTMLInputElement) {
+        const nombreUsuario = nombreUsuarioElement.value;
+        const contraseña = contraseñaElement.value;
+
+        if (!nombreUsuario || !contraseña) {
+            alert("Por favor, completa todos los campos.");
+        } else {
+            alert("¡Bienvenido " + nombreUsuario + "!");
+            // Redirección después de cerrar la alerta
+            window.location.href = "index.html";
+        }
+    } else {
+        console.error('Los elementos no son instancias de HTMLInputElement');
+    }
+});
+
+
+
+</script>
