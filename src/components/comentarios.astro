@@ -6,10 +6,19 @@
 <div id="recuadro" class="comentario">
     <h1 class="Titulo">Comentarios</h1>
     <input type="text" id="elemento" placeholder="Añadir comentario">
-    <button id="publicar">Comentar<span class="material-symbols-outlined">send</span></button>
+    <button id="publicar">Comentar<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" />
+        <path d="M6.5 12h14.5" />
+      </svg></button>
     <ul id="lista">
         <li id="comentario-1">
-            <span class="material-symbols-outlined">person</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+              </svg>
             <p>
                 La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio. 
                 Prosperamos con las criticas negativas divertidas de escribir y de leer. Pero la triste verdad que debemos afrontar, es que en el gran orden de las cosas, 
@@ -22,8 +31,13 @@
                 que ahora cocina en el Restaurante Gusteau y quien en opinión de este crítico, es nada menos, que el mejor Chef de Francia. Pronto volveré al Restaurante Gusteau, 
                 hambriento.
             </p><br>    
-            <span class="material-symbols-outlined">person</span>
-            <p>HOlaa</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+              </svg>
+            <p>Se conoce como astronomía a la ciencia que se dedica al estudio de los cuerpos celestes que pueblan el cosmos: las estrellas, los planetas, los satélites, cometas, meteoritos, galaxias y toda la materia interestelar, así como sus interacciones y movimientos.</p>
         </li>
         <!-- Guarda comentarioss -->
     </ul>
@@ -57,7 +71,6 @@
     border-radius: 5px;
     padding: 10px;
 }
-
 .comentario li{
     
     padding: 3px;
@@ -114,7 +127,32 @@
 #lista {
     font-family:"Poppins",sans-serif;
     word-wrap: break-word;
-    list-style-type: none; /* Quítale los puntos a la lista */
+    list-style-type: none;
+}
+
+#publicar {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 150px; 
+    height: 40px; 
+    background-color: #483cbb; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#publicar:hover {
+    background-color: #392f95; 
+}
+
+#publicar svg {
+    width: 24px; 
+    height: 24px; 
+    margin-left: 10px;
+    margin-right: 5px; 
 }
 
 </style>
